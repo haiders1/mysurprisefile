@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .surprise {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 You've Got a Surprise! 🎉</h1>
+        <p>Click the button below to reveal your surprise!</p>
+        
+        <button onclick="showSurprise()">Click Me for a Surprise!</button>
+        
+        <div id="surprise" class="surprise">
+            <div class="message">Look at this rat Joke Ali! 🌟</div>
+            <img src="https://i.imgur.com/CKcCpDE.jpg" alt="Your surprise image!">
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+            document.querySelector('button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
